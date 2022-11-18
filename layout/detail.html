@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+</head>
+<body>
+    <nav class="bg-gradient-to-b sticky from-slate-300	z-50 to-lime-900 top-0 border-gray-200 px-2 sm:px-4  ">
+        <div class=" mx-auto" style="width:95%">
+          <div class="container flex flex-wrap items-center justify-between ">
+            <a href="#" class="flex items-center">
+              <span class="self-center text-5xl font-bold whitespace-nowrap dark:text-white">LOGO</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+              <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:border-gray-700">
+                <li>
+                  <a href="#" class="block font-bold text-2xl py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent active:underline">Home</a>
+                </li>
+                <li>
+                  <a href="index.html" class="block font-bold text-2xl py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Menu</a>
+                </li>
+                <li>
+                  <a href="berlangganan.html" class="block font-bold text-2xl py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Langganan</a>
+                </li>
+                <li>
+                  <a href="payment.html" class="block font-bold text-2xl py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pesanan</a>
+                </li>
+                <li>
+                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent text-4xl text-black"><i class="fa-solid fa-circle-user"></i></button>
+                  <!-- Dropdown menu -->
+                  <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile Saya</a>
+                      </li>
+                    </ul>
+                    <div class="py-1">
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="mt-7" style="margin-left: 160px;">
+        <p class="font-semibold text-4xl">Menu Berlangganan</p>
+      </div>
+
+      <div class="flex ">
+      <div class="mt-7 mx-auto pb-5 " style="width:80%;  height:550px; background-color: #D9D9D9;border-radius: 20px;">
+    <div class="flex">
+        <div class="">
+        <p class="text-3xl font-bold" style="margin: 25px 0 0 35px;">Langganan 3 Hari</p>
+        <img src="food.png" alt="" width="286px" style="height: 355px; margin: 30px 0 0 35px;">
+    </div>
+    <div class="" style="margin: 100px 0 0 60px;">
+        <p class="font-bold mb-2" style="font-size: 26px;">Durasi</p>
+        <p class="text-2xl font-normal mb-4" style="margin-left:30px">3 Hari</p>
+        <p class="font-bold" style="font-size: 26px;">Jadwal Pengiriman</p>
+        <ul class="text-2xl font-normal mb-4 list-disc	" style="margin-left:60px">
+            <li>Sarapan (07.00 - 09.00)</li>
+            <li>Makan Siang (12.00 - 15.00)</li>
+        </ul>
+        <p class="font-bold mb-2" style="font-size: 26px;">Harga</p>
+        <p class="text-2xl font-normal" style="margin-left:30px">Rp 180.000</p>
+    </div>
+</div>
+<div class="relative" style="height: 80px;">
+<a href="paymentlangganan.html" type="button" class="focus:outline-none absolute right-5 bottom-0 text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium text-sm py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" style="padding: 10px 80px 16px 80px; font-size:28px; border-radius: 20px;">Pesan</a>
+</div>
+</div>
+    </div>
+
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+</body>
+</html>
